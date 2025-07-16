@@ -70,6 +70,13 @@ body {
     border-radius: 10px;
 }
 
+@media (max-width: 700px) {
+    .informations__about-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 #sketch-container {
     position: fixed;
     top: var(--header-size); 
