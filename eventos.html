@@ -13,33 +13,30 @@
         <link rel="icon" href="assets/images/logo.png">
         <link rel="stylesheet" href="styles/variables.css">
         <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/eventos.css">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
     </head>
 
     <body>
-            
-        <header class="header">
-            <img class="header__logo" src="assets/images/logo.png">
-            <nav class="header__nav">
-                <ul class="sections">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="escola.html">Escola Jayme Tiomno</a></li>
-                    <li><a href="oportunidades.html">Oportunidades</a></li>
-                    <li><a href="eventos.html">Eventos Recentes</a></li>
-                    <li><a href="recursos.html">Recursos</a></li>
-                    <li><a href="equipe.html">Equipe</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-
+        <div id="header"></div>
         <div id="sketch-container"></div>
         
-        <div class="informations">
-            <span class="informations__title">Eventos Recentes</span>
+        <div class="events">
+            <div class="events__title">Eventos Recentes</div>
+            <ul class="events__ul">
+                <li>
+                    <div class="date">26/03/2025</div>
+                    <div class="event-item">Desenvolvimento do site</div>
+                </li>
+                <li>
+                    <div class="date">20/03/2025</div>
+                    <div class="event-item">Desenvolvimento do site</div>
+                </li>
+            </ul>
         </div>
         
+        <script src="scripts/insert_header.js"></script>
         <script src="scripts/sketch.js"></script>
         <script src="scripts/point.js"></script>
     </body>

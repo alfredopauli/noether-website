@@ -1,0 +1,31 @@
+
+.informations {
+    display: grid;
+    height: calc(100% - var(--header-size));
+    grid-template-rows: 1fr 1fr;
+}
+
+.informations__title {
+    text-align: center;
+    align-content: center;
+    font-size: 50px;
+}
+
+.informations__about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.informations__about-container .about {
+    margin: 0px 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .informations__about-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
